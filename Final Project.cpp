@@ -48,10 +48,40 @@ class Book{
 			
 			cout << "Book ID:\t";
 			cin >> id;
-
+			///////////////////////////////////
+			////////////////////////
+			/////////////
 		}
-};
-int main(){
+		 void returnBook() {
+      	 		 int id;
+       			 cout << "Book ID:\t";
+        		 cin >> id;
+
+      			  list<int>::iterator itID = bookID.begin();
+      			  list<int>::iterator itCopies = nofCopies.begin();
+        		  bool found = false;
+
+      		 	 while (itID != bookID.end()) {
+           	 	if (*itID == id) {
+               		 found = true;
+              	 	 (*itCopies)++;
+              		  cout << "Book returned successfully.\n";
+              	 	 break;
+          	  }
+          	 	 ++itID;
+         	  	 ++itCopies;
+       		 }
+	
+      		  if (!found) {
+      		      cout << "Book ID not found.\n";
+      		  }
+   	 }
+			
+			}
+		void showBookDetails() {
+			}
+		void displayBooks()
+			int main(){
 
 	
 }
